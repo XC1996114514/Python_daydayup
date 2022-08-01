@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name }}'s zaku</title>
+    <link rel="icon" href="{{ url_for('static', filename='zeon.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+</head>
+<body>
+    <h2>
+        <img alt="Avatar" src="{{ url_for('static', filename='images/char.jpg' ) }}" height="200" width="200" />
+        <br />
+        {{ name }}'s zaku
+    </h2>
+    {# 使用 length 过滤器获取 Mobile_Suit 变量的长度 #}
+    <p>{{ Mobile_Suits|length }} machines</p>
+    <ul class="Mobile_Suit-list">
+        {% for Mobile_Suit in Mobile_Suits %}  {# 迭代 Mobile_Suit 变量 #}
+        <li>{{ Mobile_Suit.title }} - {{ Mobile_Suit.year }}</li>  {# 等同于 Mobile_Suit['title'] #}
+        {% endfor %}  {# 使用 endfor 标签结束 for 语句 #}
+    </ul>
+    <img alt="MSN_04_00" class="MSN_04" src="{{ url_for('static', filename='images/MSN_04.JPG') }}" >
+    <footer>
+        <small>&copy; 2022 <a href="https://www.bandainamco.co.jp/">Bandai</a></small>
+    </footer>
+
+</body>
+</html>
