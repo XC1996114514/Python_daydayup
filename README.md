@@ -19,3 +19,7 @@ Pytorch自定义数据集
 https://blog.csdn.net/a19990412/article/details/105402341
 https://www.heywhale.com/mw/notebook/5ee08b18b772f5002d734029
 https://www.heywhale.com/mw/notebook/62a5b050e844fc46b70bf38a
+
+terminal 操作annaconda
+
+https://blog.csdn.net/weixin_42345113/article/details/106444312
